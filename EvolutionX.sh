@@ -1,5 +1,6 @@
-#! /bin/bash
-
+#Evolution X
+sudo apt update
+sudo apt install git openjdk-17-jdk python-is-python3 ccache zstd curl repo build-essential bc bison flex libncurses5-dev libssl-dev
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/oneplus && \
 rm -rf prebuilts/clang/host/linux-x86 && \
