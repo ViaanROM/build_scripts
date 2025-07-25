@@ -4,7 +4,7 @@ sudo apt install git openjdk-17-jdk python-is-python3 ccache zstd curl repo buil
 rm -rf .repo/local_manifests; \
 rm -rf {device,vendor,kernel,hardware}/oneplus && \
 rm -rf prebuilts/clang/host/linux-x86 && \
-repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b vic --git-lfs -g default,-mips,-darwin,-notdefault && \
+repo init --depth=1 --no-repo-verify -u https://github.com/Evolution-X/manifest -b bka --git-lfs -g default,-mips,-darwin,-notdefault && \
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags && \
 git clone https://github.com/anshedu/android_device_oneplus_larry -b lineage-22.2 device/oneplus/larry && \
 git clone https://github.com/anshedu/android_device_oneplus_sm6375-common -b lineage-22.2 device/oneplus/sm6375-common && \
